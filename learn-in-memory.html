@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Mishna</title>
+</head>
+<body class="body_container">
+    <!-- Site Navigation -->
+    <header class="site_navigation">
+        <img src="assets/mishna-logo.svg" alt="Mishna Logo" loading="lazy">
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="main-menu" id="main-menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="learn-in-memory.html">Learn in memory</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="lean-in-memory-section">
+        <div class="inner_container">
+            <h1><span class="gradient-heading">LEARN IN MEMORY</span></h1>
+            <div class="tab-container">
+                <div class="tabs">
+                    <div class="tablink jet-tabs__control active" onclick="openTab(event, 'Declaration')">DECLARATION</div>
+                    <div class="tablink jet-tabs__control" onclick="openTab(event, 'Mishnayos')">MISHNAYOS</div>
+                    <div class="tablink jet-tabs__control" onclick="openTab(event, 'Confirmation')">CONFIRMATION</div>
+                </div>
+            
+                <div id="Declaration" class="tabcontent" style="display: block;">
+                    <h2>I WOULD LIKE TO HONOR THE MEMORY OF A FALLEN SOLDIER AND HELP ELEVATE HIS NESHAMA. I WOULD LIKE TO CHOOSE A MESECHET OR SOME PERAKIM TO LEARN IN ORDER TO ACHIEVE THIS.</h2>
+                    <button class="btn btn_default" aria-label="Get Started">Select Mishnayos</button>
+                </div>
+            
+                <div id="Mishnayos" class="tabcontent">
+                    <form method="post" enctype="multipart/form-data" id="learningForm" action="/learn-in-memory/">
+                        <div>
+                            <fieldset>
+                                <h2 class="checkbox-title">Select Mishnayos to Learn:</h2>
+                                <div class="checkbox-grid">
+                                    <input type="checkbox" id="berachos" name="mishnayos" value="Berachos">
+                                    <label for="berachos">Berachos</label>
+                
+                                    <input type="checkbox" id="peah" name="mishnayos" value="Peah">
+                                    <label for="peah">Peah</label>
+                
+                                    <input type="checkbox" id="demai" name="mishnayos" value="Demai">
+                                    <label for="demai">Demai</label>
+                
+                                    <input type="checkbox" id="kelayim" name="mishnayos" value="Kelayim">
+                                    <label for="kelayim">Kelayim</label>
+                
+                                    <input type="checkbox" id="sheviis" name="mishnayos" value="Sheviis">
+                                    <label for="sheviis">Sheviis</label>
+                
+                                    <input type="checkbox" id="terumos" name="mishnayos" value="Terumos">
+                                    <label for="terumos">Terumos</label>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Name (publicly shared)" required>
+                        </div>
+                        <div>
+                            <input type="email" id="email" name="email" placeholder="Email (not publicly shared)" required>
+                        </div>
+                        <div>
+                            <select id="country" name="country" required>
+                                <option value="" disabled selected>Select your country</option>
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <!-- Add more countries as needed -->
+                                <option value="United States">United States</option>
+                                <option value="Austria">Austria</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="btn btn_default" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            
+                <div id="Confirmation" class="tabcontent">
+                    <h2>HEBREW NAME OF SOLDIER ASSIGNED:<br>
+                        HEBREW DATE OF PETIRAH:<br>
+                        MISHNAH SELECTED:</h2>
+                </div>           
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="inner_container split_section">
+            <div class="split_column footer_about_section">
+                <h2>A LeverageIT Project</h2>
+                <p>LeverageIT has been servicing the Jewish community for close to a decade and has worked for major non-profit organizations worldwide. We felt that it was time to give back to the Jewish community and encourage Torah Learning and honoring the Neshamot of deceased loved ones.</p>
+            </div>
+            <div class="split_column contact_info_section">
+                <div class="footer_section">
+                    <div class="icon"><img src="assets/map-pin.png" alt="Location"></div>
+                    <div>
+                        <h6>Location</h6>
+                        <p class="contact_info">Toronto, Canada</p>
+                    </div>
+                </div>
+                <div class="footer_section">
+                    <div class="icon"><img src="assets/phone.svg" alt="Phone"></div>
+                    <div>
+                        <h6>Phone Number</h6>
+                        <p class="contact_info">1.888.781.2036</p>
+                    </div>
+                </div>
+                <div class="footer_section">
+                    <div class="icon"><img src="assets/envolope.png" alt="Email"></div>
+                    <div>
+                        <h6>Email</h6>
+                        <p class="contact_info">info@example.com</p>
+                    </div>
+                </div>
+                <div class="footer_section">
+                    <div class="icon"><img src="assets/linkedin.svg" alt="Social Media"></div>
+                    <div>
+                        <h6>Social Media</h6>
+                        <p class="contact_info">@leverage__it</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+     
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
