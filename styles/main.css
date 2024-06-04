@@ -317,9 +317,13 @@ section.hero h1 {
 /* About Section */
 .about_section {
     padding: 67px 0 80px 0;
-    background-image: url("../assets/About-us-BG.svg");
-    background-repeat: no-repeat;
-    background-position: 0 40px;
+    background-image: url("../assets/About-us-BG.svg"),
+                      url("../assets/bg-7thArmoredBrigade.svg.png"),
+                      url("../assets/bg-35th_Brigade_IDF.svg.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0 40px,
+                         bottom 40px right 40px,
+                         bottom 40px left 40px;
 }
 
 .split_section {
@@ -365,6 +369,12 @@ section.hero h1 {
 .call_to_action {
     padding: 74px 0 84px 0;
     background-color: #000000;
+
+    background-image: url("../assets/bg-89th_Oz_Brigade.png"),
+                      url("../assets/bg-Hativa188.PNG");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center right 40px,
+                         center left 40px;
 }
 
 .call_to_action .inner_container {
@@ -422,6 +432,12 @@ section.hero h1 {
 .testimonial_section {
     padding: 70px 0 80px 0;
     background-color: #000000;
+
+    background-image: url("../assets/bg-Golani.png"),
+                      url("../assets/bg-IAF_669_Unit_Patch.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center right 40px,
+                         center left 40px;
 }
 
 .testimonial_slider {
@@ -490,10 +506,16 @@ section.hero h1 {
 /* Registration Section */
 .registration_section {
     padding: 66px 0 86px 0;
-    background-image: url('../assets/REGISTRATION-bg.svg'), url('../assets/bg-blur.svg');
-    background-position: center 40px, center;
-    background-repeat: no-repeat, no-repeat;
-    background-size: auto, auto; 
+    background-image: url('../assets/REGISTRATION-bg.svg'), 
+                      url('../assets/bg-blur.svg'),
+                      url('../assets/bg-Nahal_Brigade.svg.png'),
+                      url('../assets/bg-Sayeret_Matkal_insignia.svg.png');
+    background-position: center 40px, 
+                         center,
+                         left 40px center,
+                         right 40px center;
+    background-repeat: no-repeat;
+    background-size: auto; 
 }
 
 .registration_section .inner_container {
@@ -735,10 +757,18 @@ textarea::placeholder {
     }
 }
 
-/* Responsive Layout for Tabs */
 @media (max-width: 480px) {
+    /* Responsive Layout for Tabs */
     .tabs .tablink {
         font-size: 12px;
         padding: 14px 6px;
+    }
+
+    /* Responsive background images */
+    .about_section,
+    .call_to_action,
+    .testimonial_section,
+    .registration_section {
+        background-size: 20%;
     }
 }
