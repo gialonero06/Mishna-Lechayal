@@ -7,13 +7,16 @@ body {
     font-size: 16px;
     line-height: 1.5;
     background-color: #131313;
-    background-position: left;
 }
 
-body, .body-inner-container {
+.home-body-container, .body-inner-container {
     background-image: url('../assets/miashna-border-bg.png');
     background-repeat: repeat-y;
     background-size: 30px;
+}
+
+.home-body-container {
+    background-position: left;
 }
 
 .body-inner-container {
