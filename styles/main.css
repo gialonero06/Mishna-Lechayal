@@ -317,13 +317,9 @@ section.hero h1 {
 /* About Section */
 .about_section {
     padding: 67px 0 80px 0;
-    background-image: url("../assets/About-us-BG.svg"),
-                      url("../assets/bg-7thArmoredBrigade.svg.png"),
-                      url("../assets/bg-35th_Brigade_IDF.svg.png");
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 0 40px,
-                         bottom 40px right 40px,
-                         bottom 40px left 40px;
+    background-image: url("../assets/About-us-BG.svg");
+    background-repeat: no-repeat;
+    background-position: 0 40px;
 }
 
 .split_section {
@@ -369,12 +365,6 @@ section.hero h1 {
 .call_to_action {
     padding: 74px 0 84px 0;
     background-color: #000000;
-
-    background-image: url("../assets/bg-89th_Oz_Brigade.png"),
-                      url("../assets/bg-Hativa188.PNG");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center right 40px,
-                         center left 40px;
 }
 
 .call_to_action .inner_container {
@@ -432,12 +422,6 @@ section.hero h1 {
 .testimonial_section {
     padding: 70px 0 80px 0;
     background-color: #000000;
-
-    background-image: url("../assets/bg-Golani.png"),
-                      url("../assets/bg-IAF_669_Unit_Patch.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center right 40px,
-                         center left 40px;
 }
 
 .testimonial_slider {
@@ -507,13 +491,9 @@ section.hero h1 {
 .registration_section {
     padding: 66px 0 86px 0;
     background-image: url('../assets/REGISTRATION-bg.svg'), 
-                      url('../assets/bg-blur.svg'),
-                      url('../assets/bg-Nahal_Brigade.svg.png'),
-                      url('../assets/bg-Sayeret_Matkal_insignia.svg.png');
+                      url('../assets/bg-blur.svg');
     background-position: center 40px, 
-                         center,
-                         left 40px center,
-                         right 40px center;
+                         center;
     background-repeat: no-repeat;
     background-size: auto; 
 }
@@ -771,4 +751,20 @@ textarea::placeholder {
     .registration_section {
         background-size: 20%;
     }
+}
+
+/* Add border background */
+.left-side-border,
+.right-side-border {
+    background-image: url('../assets/miashna-border-bg.png');
+    background-repeat: repeat-y;
+    background-size: 30px;
+}
+
+.left-side-border {
+    background-position: left; 
+}
+
+.right-side-border  {
+    background-position: right; 
 }
